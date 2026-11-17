@@ -227,7 +227,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         distribution: 'zulu'
-        java-version: 11
+        java-version: 21
         cache: 'maven'
 
     - name: Set up Maven
@@ -340,3 +340,4 @@ jobs:
       with:
         name: antlr_${{ matrix.os }}_${{ matrix.target }}
         path: antlr_${{ matrix.os }}_${{ matrix.target }}.tgz
+
